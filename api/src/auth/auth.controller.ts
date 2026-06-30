@@ -19,4 +19,4 @@ async googleCallback(@Req() req: any, @Res() res: any) {
  // this.authService.generateJwt(req.user);
 
   return res.redirect("https://weather-guard-seven.vercel.app/dashboard");
-}
+    }}
