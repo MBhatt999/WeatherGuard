@@ -18,6 +18,5 @@ export class AuthController {
 async googleCallback(@Req() req: any, @Res() res: any) {
  // this.authService.generateJwt(req.user);
 
-  return res.redirect('http://localhost:5173/dashboard');
-}
+  return res.redirect("https://weather-guard-seven.vercel.app/dashboard");
 }
