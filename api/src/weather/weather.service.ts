@@ -11,7 +11,7 @@ export class WeatherService {
     private readonly configService: ConfigService,
   ) {}
 
-  @Cron('0 */6 * * *')
+  @Cron('*/1 * * * *')
   async sendWeatherAlert() {
     try {
       const apiKey = this.configService.get<string>('WEATHER_API_KEY');
