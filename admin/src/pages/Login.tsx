@@ -1,22 +1,20 @@
 function Login() {
   const handleLogin = () => {
-    window.location.href = "http://localhost:3000/auth/google";
+    window.location.href =
+      "https://weatherguard-ijs5.onrender.com/auth/google";
   };
 
   return (
     <div className="login-container">
       <div className="login-card">
-        <div style={{ fontSize: "60px", marginBottom: "15px" }}>🌦</div>
-
+      
         <div style={{ fontSize: "100px", marginBottom: "10px" }}>
-  🌩️
-</div>
+          🌩️
+        </div>
 
-<h1>WeatherGuard</h1>
+        <h1>WeatherGuard</h1>
 
-        <p>
-          Secure Weather Alert Management System
-        </p>
+        <p>Secure Weather Alert Management System</p>
 
         <button onClick={handleLogin}>
           Continue with Google
